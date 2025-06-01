@@ -1,0 +1,10 @@
+/* Lighter brand color */
+$dm-brand-color: #aaaaaa;
+
+/* Lighter text color for better contrast */
+$dm-heading-color: #c0c0c0;
+$dm-text-color: darken($dm-heading-color, 10%);
+
+/* Same unvisited and visied colors */
+$dm-link-base-color: #5691cd;
+$dm-link-visited-color: $dm-link-base-color;

@@ -1,0 +1,12 @@
+/* Override stupid fixed pre and code sizes */
+pre {
+  font-size: 0.9375em;
+}
+code.highlighter-rouge {
+  font-size: 0.9375em;
+}
+
+/* Don't center align the header */
+.post-header {
+  text-align: start;
+}
