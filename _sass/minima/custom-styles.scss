@@ -10,3 +10,64 @@ code.highlighter-rouge {
 .post-header {
   text-align: start;
 }
+
+details {
+  /* Same as other blocks like p, pre, etc. */
+  margin-bottom: $spacing-unit * .5;
+
+  padding-left: $spacing-unit * .5;
+  border-radius: 3px;
+  border-left: 4px solid $border-color-01;
+}
+
+details[open] > summary {
+  margin-bottom: $spacing-unit * .2;
+}
+
+/* div.highlighter-rouge wraps div.highlight. Put the margin on the outer div
+instead of the inner div. This allows div.block's last-child margin to work
+correctly on code blocks. */
+div.highlight {
+  margin-bottom: 0;
+}
+
+div.highlighter-rouge {
+  /* Same as other blocks like p, pre, etc. */
+  margin-bottom: $spacing-unit * .5;
+}
+
+/* Notes support like on GitHub */
+div.block {
+  /* Same as other blocks like p, pre, etc. */
+  margin-bottom: $spacing-unit * .5;
+
+  padding-left: $spacing-unit * .5;
+  padding-top: $spacing-unit * .2;
+  padding-bottom: $spacing-unit * .2;
+  border-radius: 3px;
+  border-left: 4px solid;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+$tip-color: #559955;
+
+div.tip {
+  border-color: $tip-color;
+}
+
+.tip-text {
+  color: $tip-color;
+}
+
+$note-color: #5588aa;
+
+div.note {
+  border-color: $note-color;
+}
+
+.note-text {
+  color: $note-color;
+}
